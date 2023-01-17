@@ -1,0 +1,1 @@
+# Go does not have an Object Oriented approach
