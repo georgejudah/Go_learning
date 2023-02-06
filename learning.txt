@@ -1,0 +1,64 @@
+// Assigning variables
+// var card string = "Ace of Spades"
+// Static type language- Every value has a type 
+// Every function has to specify the type of its arguments
+// new var, name of the card, only string will be assigned to this variable = Assign the value
+// alternate way of assigning variables similar to above
+// card := "Ace of Spades"
+// := syntax only when you're initialisation of the variable
+
+// Updating the variable
+// card = "Five of diamonds"
+
+# naming functions
+//function names are in camel case
+
+# Type conversions
+conversions from one data type to another
+syntax - example, type we want byte, type we have is a string_var ([]byte (string_var))
+
+
+# Go does not have an Object Oriented approach
+# But we can acheive something similar. Refer to the deck.go file and main.go file(comments)
+
+
+#test - create a file with name end _test.go
+-- go test
+
+#go is a pass by value language - which *always* copies arguments that are passed to a function
+#Data Structure in go
+
+#- Struct - collection of different data types which are related together
+# Similar to a object in JavaScript
+# Similar to dict in Python
+
+# Struct is not a REFERENCE TYPE - but rather a VALUE TYPE
+#the big gotcha with Struct - working with struct is not the same as working with slice, pointers, pointers, pointers.....in Struct ;)
+//everytime a slice type is passed to a func, a copy of the slice is created to another mem location. But the difference is that
+//whenever a slice is created - slice actually is pointing to an array mem location. The location of the slice points to the org array as well.
+
+// how a slice looks internally - [length | capacity | pointer to head]
+// SLICE IS A REFERENCE TYPE - because it refers to another data type
+// slices, maps, channels, pointers and functions(func can be passed to a func) are reference types
+
+
+# MAP is similar to a dictionary in Python - you'll want to use a map whenever you are representing a collection of very closely related properties
+// key and value are statically typed - all must be of the same exact time - main difference between Struct and Map
+
+# The default value when you assign a variable is actually zero(0) and not None or Nil
+# Map vs Struct
+Struct don't support indexing, whereas Map supports indexing
+Struct is a value type whereas Map is a refernce type
+
+
+# Interfaces
+# Purposes: check go files in the interfaces folders- code reuse
+#Interfaces are not generic types
+# Interfaces are implicit- don't have to manually have to say that our custom type satisfies some interface
+# Interfaces are a contract to help us manage types. Garbage in -> Garbage out
+# interfaces are tough. Step #1 is understanding how to read them.
+Understand how to read interfaces in the standard lob. Writing your own interfaces is tough
+and requires experience
+# You can combine two interfaces into a single interface
+
+#how to use Interfaces in a standard library- check dir interface_http

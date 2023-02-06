@@ -3,23 +3,28 @@ package main
 func main() {
 	// assigning a slice, can contain only same type of data
 	// cards := []string{"Ace of diamonds", newCard()}
-	cards := deck{"Ace of diamonds", newCard()}
+	//new type of deck, check the deck.go file
+	// cards := deck{"Ace of diamonds", newCard()}
 	// append creates a new slice, does not actually append to the current slice
-	cards = append(cards, "Six of Spades")
+	// cards = append(cards, "Six of Spades")
+	// cards := newDeck()
+	// fmt.Println(cards.toString())
+	// cards.saveToFile("my_cards")
+	// cards := newDeckFromFile("my_cards")
 
+	//shuffle and print
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
+	// hand, remainingDeck := deal(cards, 5)
+	// cards.print()
+	// hand.print()
+	// remainingDeck.print()
+
 	// for loop
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
 	// }
-
-	// assigning variables
-	// var card string = "Ace of Spades"
-	// Static type language
-	// new var, name of the card, only string will be assigned to this variable = Assign the value
-	// alternate way of assigning variables similar to above
-	// card := "Ace of Spades"
-	// := syntax only when you're initialisation of the variable
 
 	// updating the variable
 	// card = "Five of diamonds"
