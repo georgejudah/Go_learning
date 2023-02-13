@@ -62,3 +62,15 @@ and requires experience
 # You can combine two interfaces into a single interface
 
 #how to use Interfaces in a standard library- check dir interface_http
+#also check the assignment 2 and 3
+
+#Concurrency - Concurrency is not parallelism - Concurrency, we can have multiple threads executing code. If one threads blocks,
+another one is picked up and worked on.
+
+//Parallelism comes in when using changin config to use multiple cores
+# using go routines to run tasks parallelly, reference dir channels
+# Theory behind go routines
+// By default when you run a program, we create a single go Routine
+// channels are used to communicate between different go routines
+//important note: we never ever try to access the same variable from a different child routine whenever
+//possible. We only share information by passing the variable, not sharing the variable
