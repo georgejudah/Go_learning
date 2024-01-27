@@ -1,0 +1,9 @@
+You will need to perform three major checks on your website.
+
+First, check to see whether your site has an SSL certificate or not. You'll also need to know if your website is using a self-signed SSL certificate which is not considered a valid certificate (it needs to be signed by a certificate authority).
+Second, to see if the SSL certificate has the correct hostname.
+And third, you need to know the expiration date of the server certificate.
+
+Step 1: Check if your website has an SSL certificate
+Step 2: Check whether the SSL certificate and website hostname match
+Step 3: Verify the expiration date of the server's SSL certificate
